@@ -1,0 +1,183 @@
+.description
+    background-color: #f4f4f4
+    p
+        width: 679px
+        font-size: 16px
+        font-weight: 300
+        margin-bottom: 20px
+        margin-top: 0
+    &__ul
+        display: block
+        width: 100%
+        height: 100%
+    &-col4
+        &__content
+            page-break-inside: avoid
+            break-inside: avoid
+            
+
+    &-block
+        &__tabs
+            height: 56px
+            padding-top: 32px
+            border-bottom: 1px solid #222222
+        &__tab
+            font-family: 'Baskerville Display PT'
+            color: #222222
+            font-size: 24px
+            margin-right: 29px
+    &-tab
+        &__active
+            height: auto
+            padding-bottom: 20px
+            border-bottom: 6px solid #8031a7
+    &-content
+        padding-top: 40px
+        &__active
+            height: auto
+    &-details
+        padding-top: 38px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &__column
+            display: flex
+            flex-direction: column
+        &__block
+            display: flex
+            flex-direction: column
+            font-size: 16px
+            margin-bottom: 23px
+        &__title
+            display: block
+            font-family: 'Proxima Nova Semibold'
+            margin-bottom: 0px
+        &__link
+            color: #222222
+            font-size: 16px
+    &-stones
+        &__link
+            display: block
+            width: 309px
+            color: #222222
+            font-size: 16px
+    
+    &-specifications
+        padding-top: 38px
+        &__text
+            display: block
+            font-size: 16px
+            margin-bottom: 20px
+    &-nav
+        &__slide
+            cursor: pointer
+.i
+    cursor: pointer
+    border: 1px solid #d9d9d9
+    width: 76px
+    height: 76px
+    &:hover
+        border: 1px solid #d3ae6c
+        
+.col4
+    margin: 0
+    padding: 38px 0 10px 0
+    column-count: 4
+    list-style-type: none
+    width: 100%
+    height: 100%
+        
+    
+
+@media screen and ( max-width: 1420px )
+    .container
+        max-width: 1280px
+        width: 100% 
+@media screen and ( max-width: 1280px )
+    .container
+        max-width: 1024px
+        width: 100%
+    .description
+        &-details
+            &__subtitle, &__title, &__link
+                width: 210px
+        &-stones
+            &__link
+                width: 210px
+@media screen and ( max-width: 1024px )
+    .container
+        max-width: 768px
+        width: 100%
+        margin: 0 auto
+    .col4
+        column-count: 3
+    .description
+        &-content
+            &__text
+                font-size: 14px
+                margin-bottom: 10px
+        &-details
+            &__title, &__link, &__subtitle
+                font-size: 14px
+        &-stones
+            &__link
+                font-size: 14px
+        &-specifications
+            &__text
+                font-size: 14px
+                margin-bottom: 10px
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 600px
+        width: 100%
+        margin: 0 auto
+    .col4
+        column-count: 2
+    .description
+        &-content
+            &__text
+                width: 580px
+@media screen and ( max-width: 600px )
+    .container
+        max-width: 480px
+        width: 100%
+        margin: 0 auto
+    .description
+        
+        &-content
+            &__text
+                width: 450px
+                font-size: 12px
+        &-details
+            &__title, &__link, &__subtitle
+                font-size: 12px
+            &__block
+        &-stones
+            &__link
+                font-size: 12px
+        &-specifications
+            &__text
+                font-size: 12px
+@media screen and ( max-width: 480px )
+    .container
+        max-width: 320px
+        width: 100%
+        margin: 0 auto
+    .description
+        &-content
+            &__text
+                width: 300px
+        &-details
+            &__subtitle, &__title, &__link
+                width: 130px
+            &__block
+                width: 130px
+        &-stones
+            &__link
+                width: 130px
+    
+
+
+
+
+

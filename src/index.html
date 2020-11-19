@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Страница товара</title>
+</head>
+<body>
+
+    <section class="advt" id="advt" >
+        <div class="container">
+            <div class="advt-block">
+                <span class="advt-block__text">Добро пожаловать на ведущий российский ресурс, посвященный ювелирному дизайну.</span>
+                <button id="btn" class="advt-block__close"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /.Шапка -->
+    <header class="header">
+        <div class="burger-menu">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+            <nav class="burger-menu__nav">
+                    <div class="burger-menu__block">
+                        <div class="burger-menu__btn burger-menu__line" data-state="">
+                            Клуб
+                            <span class="burger-menu__arrow"></span>
+                    </div>
+
+                        <div class="burger-menu__links">
+                            <a href="" class="burger-menu__link">ZLT Клуб</a>
+                            <a href="" class="burger-menu__link">Клуб Продавцов</a>
+                            <a href="" class="burger-menu__link">Клуб Покупателей</a>
+                        </div>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <div class="burger-menu__category">
+                            Категории
+                        </div>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn">
+                            Ювелирные украшения
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn">
+                            Арт-объекты
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn">
+                            Часы
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn">
+                            Аксессуары
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a  href="#" class="burger-menu__btn">
+                            Подарки
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn">
+                            Камни
+                        </a>
+                    </div>
+        
+                    <div class="burger-menu__block">
+                        <a href="#" class="burger-menu__btn burger-menu__color">
+                            Распродажа
+                        </a>
+                    </div>
+                    <div class="burger-menu__blockD">
+                        <a href="#" class="burger-menu__phone">
+                            СВЯЗАТЬСЯ С ZLT
+                        </a>
+                    </div>
+                    <div class="burger-menu__registration">
+                        <a href="#" class="burger-menu__in">
+                            ВХОД
+                        </a>
+                        <a href="#" class="burger-menu__in">
+                            РЕГИСТРАЦИЯ
+                        </a>
+                    </div>
+                </div>    
+            </nav>
+        </div>
+
+
+
+        <div class="container">
+            <div class="navbar">
+                <div id="up" class="navbar-up">
+                    <div class="navbar-up__left">
+                        <a href="#" class="navbar__logo">
+                            <img src="img/header/ZLT-Logotype-Inverse.svg" alt="Логотип" class="navbar-up__logo logo">
+                        </a>
+                        <div class="block__input">
+                            <img src="img/header/Search-Icon.svg" alt="" class="input__image">
+                            <input type="search" class="navbar-up__search" placeholder="Поиск по ZLT">
+                        </div>
+                    </div>
+                    <div class="navbar-up__right">
+                        <div class="navbar-authorization">
+                            <a href="#" class="navbar-authorization__link">ВХОД</a>
+                            <div class="navbar-authorization__line"></div>
+                            <a href="#" class="navbar-authorization__link">РЕГИСТРАЦИЯ</a>
+                        </div>
+                        <div class="navbar-image">
+                            <a href="#" class="navbar-image__favorite link"></a>
+                            <a href="#" class="navbar-image__bag link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.Поиск для мобильной версии  -->
+                <div class="block__input">
+                    <img src="img/header/Search-Icon.svg" alt="" class="input-image__phone">
+                    <input type="search" class="navbar-search__mobil" placeholder="Поиск по ZLT">
+                </div>
+
+                <div class="navbar-bottom">
+                    <div class="navbar-bottom__all">
+                        <div class="navbar-bottom__block">
+                            <div class="dropdown">
+                                <button href="#" class="navbar-menu__link">ZLT Клуб</button>
+                                <div class="dropdown-content__A">
+                                    <span>Блок 1</span>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button href="#" class="navbar-menu__link">Клуб Продавцов</button>
+                                <div class="dropdown-content__A">
+                                    <span>Блок 2</span>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button href="#" class="navbar-menu__link">Клуб покупателей</button>
+                                <div class="dropdown-content__A">
+                                    <span>Блок 3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-bottom__blocks">
+                            <a href="#" class="navbar-bottom__contact">Связаться с ZLT</a>
+                        </div>
+                      </div>
+                    </div>
+        
+            </div>
+        </div>
+    </header>
+
+
+    <!-- /.Навигация 1 -->
+    <section class="navigation">
+        <div class="container">
+            <div class="navigation-block">
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button class="navigation-block__link link">ЮВЕЛИРНЫЕ УКРАШЕНИЯ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 1</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button href="#" class="navigation-block__link link">АРТ-ОБЪЕКТЫ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 2</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button href="#" class="navigation-block__link link">ЧАСЫ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 3</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button href="#" class="navigation-block__link link">АКСЕССУАРЫ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 4</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button href="#" class="navigation-block__link link">ПОДАРКИ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 5</span>
+                          </div>
+                    </div>
+                </div>
+                <div class="navigation-dop">
+                    <div class="dropdown">
+                        <button href="#" class="navigation-block__link link">КАМНИ</button>
+                        <div class="dropdown-content">
+                            <span>Блок 6</span>
+                          </div>
+                    </div>
+                </div>
+                
+                <a href="#" class="navigation-block__link link navigation-block__sell">РАСПРОДАЖА</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="road">
+        <div class="container">
+            <div class="road-block">
+                <a href="#" class="road-block__link">Главная</a>    /
+                <a href="#" class="road-block__link">Ювелирные украшения</a>    /
+                <a href="#" class="road-block__link">Кольца</a>    /
+                <a href="#" class="road-block__link">Коктейльные кольца</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /.Модальное окно -->
+    <div class="photo" id="modal">
+        <button id="closeA" class="photo__close"></button>
+        <div class="photo__block">
+            <div class="photo-block__D">
+                <div class="photo-arrows__left">
+                    <img src="img/slider_mobil/Arrow-Slider-left-Normal.png" alt="" class="photo-arrows__size">
+                </div>
+                <div class="photo-slider__up">
+                        <div class="sliderA-B">
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-A.jpg" alt="" width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-B.jpg" alt=""  width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-C.jpg" alt=""  width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-A.jpg" alt="" width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-B.jpg" alt=""  width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-C.jpg" alt=""  width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-A.jpg" alt="" width="660" height="660">
+                            </div>
+                            <div class="sliderA-B__slide">                              
+                                    <img class="sliderA-B__loupe" src="img/slider_mobil/slide-C.jpg" alt=""  width="660" height="660">                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-arrows__right">
+                        <img src="img/slider_mobil/Arrow-Slider-right-Normal.png" alt="" class="photo-arrows__size">
+                    </div>
+                </div>
+
+                <div class="photo-slider__color">
+                    <div class="photo-slider__bottom">
+                        <div class="sliderA-A">
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-A.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-B.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A_slide">
+                                <img src="img/slider_mobil/item-C.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-D.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-F.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-I.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-A.png" alt="" class="i">
+                            </div>
+                            <div class="sliderA-A__slide">
+                                <img src="img/slider_mobil/item-B.png" alt="" class="i">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider-main">
+                <div class="slider-d9">
+                    <a href="#" class="slider-social__instagram"></a>
+                    <a href="#" class="slider-social__facebook"></a>
+                    <a href="#" class="slider-social__email"></a>
+                    <a href="#" class="slider-social__print"></a>
+                </div>
+                <div class="slider-block">
+                    <div class="slider-arrows">
+                        <div class="slider-arrow__top">
+                            <img src="img/slider/Arrow-top.png" alt="">
+                        </div>
+                        <div class="slider-block1">
+                            <div class="slider-nav">
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-1.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-2.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-3.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-4.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-5.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-6.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-1.png" alt="" class="i">
+                                </div>
+                                <div class="slider-nav__slide">
+                                    <img src="img/slider/item-2.png" alt="" class="i">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-arrow__bottom">
+                            <img src="img/slider/Arrow-bottom.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-block2">
+                        <div class="slider-arrows__left">
+                            <img src="img/slider/Arrow-left.png" alt="">
+                        </div>
+                        <div class="slider-social__block" id="buttonA">
+                            
+                            <div class="slider-for">
+                                <div class="slider-for__slide">
+                                    <a href="#" alt=""></a>
+                                        <img class="slider-for__loupe" src="img/slider/slide-1.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">1 из 8</span>
+                                </div>
+                                
+                                <div class="slider-for__slide">
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-2.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">2 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-3.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">3 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-1.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">4 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-2.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">5 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="">
+                                        <img class="slider-for__loupe" src="img/slider/slide-3.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">6 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-1.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" >
+                                    </a>
+                                    <span class="slider-for__number">7 из 8</span>
+                                </div>
+                                <div class="slider-for__slide" >
+                                    <a href="#" alt="" >
+                                        <img class="slider-for__loupe" src="img/slider/slide-2.jpg" alt="" style="cursor: url(img/slider/loupe.cur), auto;" width="660" height="660" id="buttonA">
+                                    </a>
+                                    <span class="slider-for__number">8 из 8</span>
+                                </div>
+                            </div>   
+                        </div>  
+                        <div class="slider-arrows__right">
+                            <img src="img/slider/Arrow-right.png" alt="">
+                        </div>  
+                        
+                    </div>  
+
+                </div>
+                <div class="slider-icons">
+                    <a href="#" class="slider-icons__favorite"></a>
+                    <a href="#" class="slider-icons__put"></a>
+                </div>
+                <div class="slider-content">
+                    <h2 class="slider-content__title">Кольцо MOISEIKIN «Цветущий
+                        миндаль», бриллианты, жемчуг
+                        кеши, турмалины, сапфиры,
+                        золото 750 пробы</h2>
+                    <span class="slider-content__price">1 350 000 RUB</span>
+                    <button class="slider-content__btn slider-content__buy">
+                        Купить
+                    </button>
+                    <button class="slider-content__btn slider-content__money">
+                        ПРЕДЛОЖИТЬ СВОЮ ЦЕНУ
+                    </button>
+                    <div class="slider-content__twobtn">
+                        <div id="dimension">
+                            <select name="dimension_tovar" size=5 width=198 placeholder="Размер">
+                                <option value="0">Размер</option>
+                                <option value="17">17</option>
+                                <option value="17,5">17,5</option>
+                                <option value="18">18</option>
+                            </select>
+                        </div>
+                        <button class="slider-content__table">ТАБЛИЦА РАЗМЕРОВ</button>
+                    </div>
+                    
+                    <span class="slider-content__delivery"><b>ДОСТАВКА:</b> Стоимость, сроки зависят от местонахождения.
+                       <a href="#" class="slider-content__question">Запросить стоимость и варианты доставки</a></span>
+                    <span class="slider-content__deliv"><b>Доставка из:</b> Россия, Екатеринбург</span>
+                    <div class="slider-content__line"></div>
+                    <span class="slider-content__subtitle">Есть вопросы об этом произведении?</span>
+                    <button class="slider-content__button">СПРОСИТЕ ПРОДАВЦА</button>
+                    <span class="slider-content__subtitle">Проверенный профессиональный продавец</span>
+                    <div class="slider-content__rating">
+                        <div class="rating_block">
+                            <input name="rating" value="5" id="rating_5" type="radio" />
+                            <label for="rating_5" class="label_rating"></label>
+                            
+                            <input name="rating" value="4" id="rating_4" type="radio" />
+                            <label for="rating_4" class="label_rating"></label>
+                            
+                            <input name="rating" value="3" id="rating_3" type="radio" />
+                            <label for="rating_3" class="label_rating"></label>
+                            
+                            <input name="rating" value="2" id="rating_2" type="radio" />
+                            <label for="rating_2" class="label_rating"></label>
+                            
+                            <input name="rating" value="1" id="rating_1" type="radio" />
+                            <label for="rating_1" class="label_rating"></label>
+                        </div>
+                        <span class="slider-content__review">Отзывов пока нет</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <!-- /. (Табы) Описание продукта -->
+    <section class="description">
+    <div class="container">
+        <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label class="description__label" for="tab-btn-1">Описание</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label class="description__label" for="tab-btn-2">Детали</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label class="description__label" for="tab-btn-3">Характеристики</label>
+
+        <div id="content-1">
+            <div class="description-content" id="text-A">
+                <p>
+                    Кольцо «Цветущий миндаль»
+                </p>
+                <p>
+                    Коллекция ВИНСЕНТ
+                </p>
+                <p>
+                    Вдохновленный творчеством Ван Гога, MOISEIKIN создал кольцо с полной жизни веткой цветущего миндаля.
+                </p>
+                <p>
+                    Авторское цветочное кольцо ручной работы создано при помощи яркой палитры из драгоценных материалов: 
+                    розовых турмалинов, живописного фактурного золота и рассыпанных в нём сияющих бриллиантов и 
+                    розовых сапфиров (технология перевернутой закрепки). Завершают картину нежные лепестки миндаля из жемчуга Кеши.
+                </p>
+                <p>
+                    Кольцо отлично подойдет к коктейльному платью, поможет создать яркий и одновременно нежный образ.
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div id="content-2">
+          <!-- /.Описание детали -->
+          <div class="description__ul">
+                <ul class="description-col4 col4">
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Категория
+                            </span>
+                            <a href="#" class="description-details__link">
+                                Коктейльное кольцо
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Создатель
+                            </span>
+                            <a href="#" class="description-details__link">
+                                MOISEIKIN
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Коллекция
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Винсент
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Уникальная технологии
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Перевернутая закрепка
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Стиль
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Флористика
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content ">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Место создания
+                            </span>
+                            <a href="#" class="description-details__link">
+                                Россия, Екатеринбург
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Дата создания
+                            </span>
+                            <a href="#" class="description-details__link">
+                                2018 г.
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Период создания
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                2010–2019 гг.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Пол
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Женский
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Камни
+                            </span>
+                            <div class="classdescription-stones">
+                                <span href="#" class="description-stones__link">Бриллиант, Сапфир, 
+                                    Турмалин, Жемчуг барочный, Жемчуг культивированный</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Обработка камней
+                            </span>
+                            <a href="#" class="description-details__link">
+                                Круглая огранка, Триллион огранка
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Металлы
+                            </span>
+                            <a href="#" class="description-details__link">
+                                Золото 750 пробы
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Размеры
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Длина ХХ мм, Ширина ХХ мм, Высота ХХ мм.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Диаметр
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                17 мм
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Вес
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                19,22 г
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Состояние товара
+                            </span>
+                            <a href="#" class="description-details__link">
+                                Новый товар
+                            </a>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Местонахождение продавца
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Россия, Екатеринбург
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Индивидуальный номер от продавца
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                Продавец: 4010101047313
+                            </span>
+                        </div>
+                    </li>
+                    <li class="description-col4__content">
+                        <div class="description-details__block">
+                            <span class="description-details__title">
+                                Индивидуальный номер от ZLT
+                            </span>
+                            <span href="#" class="description-details__subtitle">
+                                ZLT: ZLTJ155336001
+                            </span>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div id="content-3">
+            <div class="description-specifications tab-content" id="text-С">
+                <span class="description-specifications__text">
+                    Артикул: 4010101047313
+                </span>
+                <span class="description-specifications__text">
+                    Размер: 17 (мм, диаметр)
+                </span>
+                <span class="description-specifications__text">
+                    Общий вес: 19.22 г
+                </span>
+                <span class="description-specifications__text">
+                    Золото: 750 пробы
+                </span>
+                <span class="description-specifications__text">
+                    Бриллианты: 45 шт., круглая огранка, 0,595 кар
+                </span>
+                <span class="description-specifications__text">
+                    Жемчуг Акойя, культивированный: 3 шт., 0,14 г
+                </span>
+                <span class="description-specifications__text">
+                    Жемчуг Кеши SSP, культивированный: 5 шт., 1,5 г
+                </span>
+                <span class="description-specifications__text">
+                    Сапфир: 74 шт., круглая огранка, 1,443 кар
+                </span>
+                <span class="description-specifications__text">
+                    Турамлин: 3 шт., огранка триллион, 2,84 кар
+                </span>
+            </div>  
+        </div>      
+        </div>
+    </div>
+    </section>
+
+
+    <!-- /.Доставка и возврат -->
+    <section class="delivery">
+        <div class="container">
+            <span class="delivery__title">Доставка и возврат</span>
+            <div class="delivery__block">
+                <div class="delivery-content delivery-content__A">
+                    <span class="delivery-content__title">Доставка</span>
+                    <span class="delivery-content__subtitle">Стоимость, сроки зависят от местонахождения. </span>
+                    <a href="#" class="delivery-content__line">Запросить стоимость и варианты доставки</a>
+                    <span class="delivery-content__subtitle delivery-content__top"><span class="delivery-content__bold">Доставка из: </span>Россия, Екатеринбург</span>
+                </div>
+                <div class="delivery-content delivery-content__B">
+                    <span class="delivery-content__title">Отмена и возврат заказа</span>
+                    <span class="delivery-content__subtitle">Возврат этого товара может быть инициирован в течение 3 дней с момента доставки.</span>
+                    <a href="#" class="delivery-content__line">Подробности</a>
+                </div>
+                <div class="delivery-content delivery-content__C">
+                    <span class="delivery-content__title">Гарантия защиты покупателей ZLT</span>
+                    <span class="delivery-content__subtitle">Если условия доставки вашего товара не будут соблюдены,
+                         мы будем работать с вами и продавцом, чтобы исправить ситуацию. </span>
+                         <a href="#" class="delivery-content__line">Подробности</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- /.Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer-content">
+                    <span class="footer-content__title">
+                        ZLT КЛУБ
+                    </span>
+                    <a href="#" class="footer-content__link">О Клубе</a>
+                    <a href="#" class="footer-content__link">Связаться с ZLT</a>
+                    <a href="#" class="footer-content__link">Центр поддержки</a>
+                    <a href="#" class="footer-content__link">Пресса</a>
+                    <a href="#" class="footer-content__link">Вакансии</a>
+                </div>
+                <div class="footer-content">
+                    <span class="footer-content__title">
+                        КЛУБ ПРОДАВЦОВ
+                    </span>
+                    <a href="#" class="footer-content__link">Вступить в клуб</a>
+                    <a href="#" class="footer-content__link">Авторизация</a>
+                    <a href="#" class="footer-content__link">Каталог продавцов</a>
+
+                    <span class="footer-content__title">
+                        КЛУБ ПОКУПАТЕЛЕЙ
+                    </span>
+                    <a href="#" class="footer-content__link">Вступить в клуб</a>
+                    <a href="#" class="footer-content__link">Авторизация</a>
+                </div>
+                <div class="footer-content">
+                    <span class="footer-content__title">
+                        КАТЕГОРИИ
+                    </span>
+                    <a href="#" class="footer-content__link">Ювелирные украшения</a>
+                    <a href="#" class="footer-content__link">Арт-объекты</a>
+                    <a href="#" class="footer-content__link">Часы</a>
+                    <a href="#" class="footer-content__link">Аксессуары</a>
+                    <a href="#" class="footer-content__link">Подарки</a>
+                    <a href="#" class="footer-content__link">Камни</a>
+                </div>
+                <div class="footer-content">
+                    <span class="footer-content__title">
+                        ПОМОЩЬ
+                    </span>
+                    <a href="#" class="footer-content__link">Задать вопрос</a>
+                    <a href="#" class="footer-content__link">Правила и условия</a>
+                    <a href="#" class="footer-content__link">Юридическая информация</a>
+                    <a href="#" class="footer-content__link">Защита персональных данных</a>
+                    <a href="#" class="footer-content__link">Авторские права</a>
+                    <a href="#" class="footer-content__link">Карта сайта</a>
+                </div>
+                <div class="footer-content footer-last">
+                    <span class="footer-content__title footer-content__title2">
+                        СВЯЗАТЬСЯ С НАМИ
+                    </span>
+                    <span class="footer-content__subtitle">
+                        Регулярно получать информационные письма от ZLT
+                    </span>
+                    <div class="footer-content__form">
+                        <input type="email" class="footer-content__mail" placeholder="Мой E-mail">
+                        <button class="footer-content__btn">ПОДПИСАТЬСЯ</button>
+                    </div>
+                    <div class="footer-content__social">
+                        <a href="#" class="footer-content__instagram"></a>
+                        <a href="#" class="footer-content__facebook"></a>
+                        <a href="#" class="footer-content__telegram"></a>
+                        <a href="#" class="footer-content__youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-adaptive">
+                <div class="footer-adaptive__block">
+                    <div class="footer-adaptive__btn" data-state="">
+                        ZLT клуб
+                        <span class="footer-adaptive__arrow"></span>
+                    </div>
+                    
+                    <div class="footer-adaptive__links">
+                        <a href="" class="footer-adaptive__link">О Клубе</a>
+                        <a href="" class="footer-adaptive__link">Связаться с ZLT</a>
+                        <a href="" class="footer-adaptive__link">Центр поддержки</a>
+                        <a href="" class="footer-adaptive__link">Пресса</a>
+                        <a href="" class="footer-adaptive__link">Вакансии</a>
+                    </div>
+                </div>
+                
+                <div class="footer-adaptive__block">
+                    <div class="footer-adaptive__btn2" data-state="">
+                        КЛУБ ПРОДАВЦОВ
+                        <span class="footer-adaptive__arrow2"></span>
+                    </div>
+                    <div class="footer-adaptive__links2">
+                        <a href="" class="footer-adaptive__link">Вступить в клуб</a>
+                        <a href="" class="footer-adaptive__link">Авторизация</a>
+                        <a href="" class="footer-adaptive__link">Каталог продавцов</a>
+                    </div>
+                </div>
+
+                <div class="footer-adaptive__block">
+                    <div class="footer-adaptive__btn3" data-state="">
+                        КЛУБ ПОКУПАТЕЛЕЙ
+                        <span class="footer-adaptive__arrow3"></span>
+                    </div>
+                    <div class="footer-adaptive__links3">
+                        <a href="" class="footer-adaptive__link">Вступить в клуб</a>
+                        <a href="" class="footer-adaptive__link">Авторизация</a>
+                    </div>
+                </div>
+
+                <div class="footer-adaptive__block">
+                    <div class="footer-adaptive__btn4" data-state="">
+                        КАТЕГОРИИ
+                        <span class="footer-adaptive__arrow4"></span>
+                    </div>
+                    <div class="footer-adaptive__links4">
+                        <a href="" class="footer-adaptive__link">Ювелирные украшения</a>
+                        <a href="" class="footer-adaptive__link">Арт-объекты</a>
+                        <a href="" class="footer-adaptive__link">Часы</a>
+                        <a href="" class="footer-adaptive__link">Аксессуары</a>
+                        <a href="" class="footer-adaptive__link">Подарки</a>
+                        <a href="" class="footer-adaptive__link">Камни</a>
+                    </div>
+                </div>
+
+                <div class="footer-adaptive__block">
+                    <div class="footer-adaptive__btn5" data-state="">
+                        Помощь
+                        <span class="footer-adaptive__arrow5"></span>
+                    </div>
+                    <div class="footer-adaptive__links5">
+                        <a href="" class="footer-adaptive__link">Задать вопрос</a>
+                        <a href="" class="footer-adaptive__link">Правила и условия</a>
+                        <a href="" class="footer-adaptive__link">Юридическая информация</a>
+                        <a href="" class="footer-adaptive__link">Защита персональных данных</a>
+                        <a href="" class="footer-adaptive__link">Авторские права</a>
+                        <a href="" class="footer-adaptive__link">Карта сайта</a>
+                    </div>
+                </div>
+                <div class="footer-content footer-last">
+                    <span class="footer-content__title footer-content__title2">
+                        СВЯЗАТЬСЯ С НАМИ
+                    </span>
+                    <span class="footer-content__subtitle">
+                        Регулярно получать информационные письма от ZLT
+                    </span>
+                    <div class="footer-content__form">
+                        <input type="email" class="footer-content__mail" placeholder="Мой E-mail">
+                        <button class="footer-content__btn">ПОДПИСАТЬСЯ</button>
+                    </div>
+                    <div class="footer-content__social">
+                        <a href="" class="footer-content__item">
+                            <img src="img/footer/Instagram-Icon-Footer-Normal.svg" alt="" class="footer-img">
+                        </a>
+                        <a href="" class="footer-content__item">
+                            <img src="img/footer/Facebook-Icon-Footer-Normal.svg" alt="">
+                        </a>
+                        <a href="" class="footer-content__item">
+                            <img src="img/footer/Telegram-Icon-Footer-Normal.svg" alt="">
+                        </a>
+                        <a href="" class="footer-content__item">
+                            <img src="img/footer/YouTube-Icon-Footer-Normal.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content__line"></div>
+            <span class="footer__description">
+                © ZLT Club 2020. Все права защищены.
+            </span>
+        </div>
+    </footer>
+
+    
+    <!-- /.Скрипты -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modal-slider.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/myselect.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/auto.js"></script>
+</body>
+</html>

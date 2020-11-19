@@ -1,0 +1,169 @@
+.photo
+    display: none
+    position: fixed
+    background-color: #ffffff
+    width: 100% 
+    margin: auto
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 200000000
+    overflow: hidden
+    &-arrows
+        &__left
+            padding-left: 100px
+            cursor: pointer
+            
+        &__right
+            cursor: pointer
+            padding-right: 100px
+            
+    &-block
+        &__D
+            display: flex
+            justify-content: space-around
+            align-items: center
+            margin-bottom: 47px
+    &-slider
+        margin: auto
+        &__up
+            margin: 50px auto
+            width: 440px
+            height: 440px
+        &__bottom
+            margin: auto
+            width: 709px
+        &__color
+            bottom: 0
+            left: 0
+            position: fixed
+            right: 0
+            padding: 26px 0
+            background-color: #f4f4f4
+    &__close
+        outline: none 
+        border: none
+        background-color: transparent
+        position: absolute
+        width: 20px
+        height: 20px
+        right: 15px
+        top: 15px
+        cursor: pointer
+        &:before, &:after
+            position: absolute
+            content: ' '
+            height: 20px
+            width: 1px
+            background-color: #888888
+        &:before
+            transform: rotate(45deg)
+        &:after
+            transform: rotate(-45deg)   
+
+
+.sliderA
+    &-A
+        &__slide
+            outline: none
+            width: 80px
+            height: 80px
+    &-B
+        &__slide
+           
+            outline: none
+        &__loupe
+            width: 440px
+            height: 440px
+
+.modal
+    &__active
+        display: block
+
+@media screen and ( max-width: 1420px )
+    .photo
+        &-slider
+            &__up 
+                width: 400px
+                height: 400px
+        &-block
+            &__D
+                margin-bottom: 25px
+    .sliderA
+        &-B
+            &__loupe
+                width: 400px
+                height: 400px
+@media screen and ( max-width: 1024px )
+    .photo
+        &-slider
+            &__up 
+                width: 350px
+                height: 350px
+            &__bottom
+                width: 450px
+        &-arrows
+            &__size
+                width: 25px
+        &-block
+            &__D
+                margin-bottom: 0
+    .sliderA
+        &-B
+            &__loupe
+                width: 350px
+                height: 350px
+
+@media screen and ( max-width: 768px )
+    .photo
+        &-slider
+            &__up
+                width: 350px
+                height: 350px
+            &__bottom
+                width: 400px
+        &-arrows
+            &__left
+                padding-left: 30px
+            &__right
+                padding-right: 30px
+    .sliderA
+        &-B
+            &__loupe
+                width: 350px
+                height: 350px
+@media screen and ( max-width: 600px )
+    .photo
+        &-slider
+            &__up
+                width: 250px
+                height: 250px
+                margin: 35px auto
+            &__bottom
+                width: 300px
+        &-arrows
+            &__size
+                width: 20px
+    .sliderA
+        &-B
+            &__loupe
+                width: 250px
+                height: 250px
+@media screen and ( max-width: 480px )
+    .photo
+        &-slider
+            &__up
+                width: 150px
+                height: 150px
+                margin: 20px auto
+            &__bottom
+                width: 250px
+        &-arrows
+            &__size
+                width: 15px
+    .sliderA
+        &-B
+            &__loupe
+                width: 150px
+                height: 150px

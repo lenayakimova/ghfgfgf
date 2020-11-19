@@ -1,0 +1,546 @@
+.active
+    &__slide
+        border: #d3ae6c 1px solid
+.slider
+    padding-top: 40px
+    &-main
+        display: flex  
+        position: relative
+        padding-bottom: 50px
+        
+    &-block
+        display: flex
+        align-items: center
+        margin-right: 10px
+        
+    &-block1
+        width: 83px
+    &-nav
+        margin-top: 20px
+        margin-bottom: 20px
+        &__slide
+            width: 82px
+            height: 82px
+            border: 1px solid #d9d9d9
+            margin-bottom: 10px
+            outline: none
+            &:last-child
+                margin-bottom: 0
+    &-for 
+        &__slide
+            outline: none
+            display: flex
+            align-items: center
+        &__number
+            padding-top: 30px
+            display: block
+            text-align: center
+    &-d9 
+        z-index: 200
+        position: absolute
+        bottom: 50px
+        left: 825px
+        display: flex
+    &-social 
+        
+
+        &__block
+            width: 660px
+            padding: 0 40px
+
+    &-two
+        padding-top: 15px
+        display: flex
+        align-items: center
+        justify-content: center
+    &-block2 
+        
+        display: flex
+        align-items: center
+        padding-left: 100px
+    &-arrows
+        align-items: center
+        display: flex
+        flex-direction: column
+        &__left
+            cursor: pointer
+        &__right
+            cursor: pointer
+    &-icons
+        display: flex
+        flex-direction: column 
+        padding-right: 40px
+    &__icon
+        margin-bottom: 16px
+    &-content
+        &__title
+            width: 385px
+            margin-top: -3.5px
+        &__price
+            font-size: 18px
+            letter-spacing: 0.9px
+            line-height: 28px
+            text-transform: uppercase
+            margin-top: 30px
+            display: block
+        &__btn
+            width: 418px
+            height: 48px
+            text-align: center
+            border: 2px solid #8031a7
+            text-transform: uppercase
+            font-size: 16px
+            font-family: 'Proxima Nova Light', sans-serif
+            cursor: pointer
+        &__buy
+            margin-top: 15px
+            margin-bottom: 10px
+            background-color: #8031a7
+            color: #ffffff
+            &:hover
+                background-color: #572c5f
+                border: 2px solid #572c5f
+                transition: 0.3s
+        &__money
+            background-color: transparent
+            color: #8031a7
+            &:hover
+                background-color: #8031a7
+                color: #ffffff
+                transition: 0.3s
+        &__twobtn 
+            margin-top: 20px  
+            display: flex
+            align-items: center
+        &__table
+            width: 198px
+            height: 48px
+            text-transform: uppercase
+            text-align: center
+            border: 2px solid #666666
+            background-color: transparent
+            color: #666666
+            font-size: 16px
+            font-family: 'Proxima Nova Light', sans-serif
+            cursor: pointer
+            &:hover
+                border: 2px solid #000000
+                color: #000000
+        &__delivery
+            margin-top: 25px
+            display: block
+        &__deliv
+            margin-top: 10px
+            display: block
+        &__question
+            color: #000000
+        &__line
+            margin-top: 22px
+            width: 420px
+            border-bottom: 1px solid #888888
+        &__subtitle
+            font-size: 16px
+            font-family: "Baskerville Display PT"
+            margin-top: 20px
+            display: block
+        &__button
+            text-transform: uppercase
+            height: 48px
+            width: 318px
+            border: 2px solid #cba052
+            background-color: transparent
+            color: #cba052
+            font-size: 16px
+            font-family: 'Proxima Nova Light', sans-serif
+            margin-top: 14px
+            cursor: pointer
+            &:hover
+                background-color: #cba052
+                color: #ffffff
+                transition: 0.3s
+        &__rating
+            margin-top: 20px
+            display: flex
+            align-items: center
+        &__review
+            font-family: 'Proxima Nova Semibold'
+            margin-left: 12px
+            display: inline-block
+$var1: #222222
+$var2: #666666
+$var3: #ffffff
+
+.select 
+	margin-right: 21px
+	position: relative
+	.select__content__wrapper 
+		position: absolute
+		top: 47px
+		width: inherit
+		border: 1px solid $var1
+		overflow-y: scroll
+		opacity: 0
+		z-index: 1
+	
+	&[data-state="active"] .select__title::before 
+		transform: translate(-4px, -50%) rotate(-45deg)
+	
+	&[data-state="active"] .select__title::after 
+		transform: translate(4px, -50%) rotate(45deg)
+	
+	&[data-state="active"] .select__content__wrapper 
+		opacity: 1
+	
+	&[data-state="active"] .select__label 
+		max-height: 40px
+		border-top-width: 1px
+	
+	&__title 
+		padding: 12px 12px 12px 45px
+		font-size: 16px
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		height: 20px
+		border: solid 2px $var2
+		cursor: pointer
+		&::before, &::after 
+			content: ""
+			position: absolute
+			top: 50%
+			right: 15px
+			display: block
+			width: 12px
+			height: 1px
+			transition: all 0.3s ease-out
+			background-color: $var1
+			transform: translate(-5px, -50%) rotate(45deg)
+		
+		&::after 
+			transform: translate(3px, -50%) rotate(-45deg)
+		
+		&::before, &::after 
+			background-color: $var1
+		
+	
+	&:focus 
+		border: 1px solid $var1
+	
+	&__content 
+		display: flex
+		flex-direction: column
+		background-color: $var3
+		transition: all 0.3s ease-out
+		z-index: 8
+	
+	&__label[data-selected="selected"] 
+		font-weight: bold
+	
+	&__label 
+		display: flex
+		align-items: center
+		width: 133px
+		height: 40px
+		max-height: 0px
+		padding-left: 15px
+		transition: all 0.2s ease-out
+		cursor: pointer
+		overflow: hidden
+		font-family: 'Proxima Nova Light', sans-serif
+		color: $var1
+		margin-bottom: 0
+		&:hover 
+			background-color: #e6d2eb 
+.rating_block 
+	width: 125px
+	height: 25px
+	input[type="radio"] 
+		display: none
+
+.label_rating 
+	float: right
+	display: block
+	width: 25px
+	height: 25px
+	background: url(../img/slider/rating.png) no-repeat 50% 0
+	cursor: pointer
+
+/*Пишем правила смены положения background-а*/
+.rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+.rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+.rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+	background-position: 50% -25px
+
+#size
+    position: relative
+    margin-top: 30px
+    margin-right: 20px	
+
+@media screen and ( max-width: 1420px )
+    .container
+        max-width: 1280px
+        width: 100% 
+        margin: 0 auto
+    .select
+        width: 165px !important
+    .slider
+        &-block
+            height: 600px
+        &-main
+            padding-bottom: 10px
+        &-social     
+            &__block
+                width: 550px
+        &-for 
+            width: 550px
+            &__loupe
+                width: 550px
+                height: 550px
+        &-content
+            width: 350px
+            &__title
+                font-size: 20px
+                width: 350px
+            &__btn
+                width: 350px
+            &__table
+                width: 165px
+            &__line
+                width: 350px
+        &-d9
+            left: 695px
+            bottom: 50px
+            height: 20px
+            top: 578px
+@media screen and ( max-width: 1280px )
+    .container
+        max-width: 1030px
+        width: 100%
+        margin: 0 auto
+    .select
+        width: 120px !important
+        margin-right: 20px
+        &__label 
+            width: 88px
+        &__title
+            padding: 12px 12px 12px 20px
+    .slider
+        &-block
+            height: 600px
+            margin-top: 40px
+        &-social     
+            &__block
+                width: 450px
+                padding: 0 15px
+        &-for 
+            width: 450px
+            &__loupe
+                width: 450px
+                height: 450px
+        &-content
+            width: 260px
+            &__title
+                font-size: 18px
+                width: 260px
+            &__btn
+                width: 260px
+            &__table
+                
+                width: 120px
+            &__button
+                width: 260px
+            &__line
+                width: 260px
+            &__review
+                margin-left: 5px
+        &-d9 
+            left: 544px 
+            top: 568px
+    .rating-area
+        width: 140px
+    .rating-area:not(:checked)>label
+        width: 25px
+        font-size: 25px
+@media screen and ( max-width: 1024px )
+    .container
+        max-width: 768px
+        width: 100%
+        margin: 0 auto
+    .select
+        width: 260px !important
+        margin-right: 24px
+        &__label 
+            width: 228px
+        &__title
+            padding: 12px 12px 12px 98px
+    .slider
+        &-block
+            margin-top: auto
+            height: auto
+        &-main
+            display: flex
+            flex-wrap: wrap
+
+        &-content
+            width: 600px
+            margin: 0 auto
+            &__title
+                margin-top: 30px
+                width: 100%
+            &__table 
+                width: 260px
+            &__line
+                width: 100%
+            &__buy
+                margin-right: 20px
+        &-d9 
+            top: 542px
+        &-icons 
+            padding-right: 0
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 600px
+        width: 100%
+        margin: 0 auto
+    .select
+        width: 238px !important
+        margin-right: 23px
+        &__label 
+            width: 206px
+        &__title
+            padding: 12px 12px 12px 87px
+    .slider
+        &-social     
+            &__block
+                width: 300px
+        &-for 
+            width: 300px
+            &__loupe
+                width: 300px
+                height: 300px
+        &-icons
+            padding-right: 0
+        &-content
+            width: 500px
+            margin: 0 auto
+            &__table
+                width: 238px
+            &__title
+                margin-top: 50px
+            &__buy
+                width: 237px
+            &__money
+                width: 237px
+            &__button 
+                width: 237px
+        &-d9 
+            left: 410px
+            top: 383px
+        &-block2
+            padding-left: 80px   
+@media screen and ( max-width: 600px )
+    .container
+        max-width: 480px
+        width: 100%
+        margin: 0 auto
+    .select
+        width: 175px !important
+        margin-right: 24px
+        &__label 
+            width: 143px
+        &__title
+            font-size: 12px
+            padding: 12px 12px 12px 63px
+    .slider
+        &-block2
+            padding-left: 40px
+        &-d9 
+            left: 220px
+            top: 370px
+        &-content
+            width: 380px
+            margin: 0 auto
+            &__title
+                margin-top: 100px
+            &__buy
+                width: 175px
+                font-size: 12px
+            &__money
+                width: 175px
+                font-size: 12px
+            &__button 
+                width: 175px
+                font-size: 12px
+            &__table
+                font-size: 12px
+                width: 175px
+            &__rating
+                margin-left: 0
+        &-icons
+            position: absolute
+            left: 455px
+            top: 0
+    .__select8
+        width: 175px
+    .__select__title8[data-default]
+        font-size: 14px 
+        padding-left: 60px !important
+@media screen and ( max-width: 480px )
+    .container
+        max-width: 320px
+        width: 100%
+        margin: 0 auto
+    .select
+        width: 128px !important
+        margin-right: 24px
+        &__label 
+            width: 113px
+        &__title
+            font-size: 14px
+            padding: 12px 12px 12px 32px
+    .slider
+        &-block2 
+            padding-left: 0
+        &-arrows
+            display: none
+        &-social     
+            &__block
+                width: 250px
+        &-for 
+            width: 250px
+            &__loupe
+                width: 250px
+                height: 250px
+        &-content
+            width: 280px
+            margin-left: 0 auto
+            &__title
+                margin-top: 80px
+                font-size: 14px
+            &__buy
+                width: 280px
+                font-size: 14px
+            &__money
+                width: 280px
+                font-size: 14px
+            &__table
+                font-size: 14px
+            &__button 
+                width: 280px
+                font-size: 14px
+            &__rating
+                margin-left: 0px
+        &-icons
+            position: absolute
+            left: 295px
+            top: 0
+        &-d9 
+            left: 80px
+            top: 320px
+    .__select__title8[data-default]
+        
+        padding-left: 35px !important
+           
+            
+        
+            

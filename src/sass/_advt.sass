@@ -1,0 +1,80 @@
+.advt
+    width: 100%
+    top: 0
+    background-color: #f4f4f4
+    z-index: 300
+    &-block
+        &__text
+            padding: 10px 0
+            font-size: 16px
+            text-align: center
+            display: block
+        &__close
+            outline: none 
+            border: none
+            background-color: transparent
+            position: absolute
+            width: 20px
+            height: 20px
+            right: 0
+            top: 3px
+            cursor: pointer
+            &:before, &:after
+                position: absolute
+                content: ' '
+                height: 20px
+                width: 1px
+                background-color: #888888
+            &:before
+                transform: rotate(45deg)
+            &:after
+                transform: rotate(-45deg)
+                
+@media screen and ( max-width: 1420px )
+    .container
+        max-width: 1280px
+        width: 100%   
+        margin: 0 auto
+@media screen and ( max-width: 1280px )
+    .container
+        max-width: 1024px
+        width: 100%   
+        margin: 0 auto     
+@media screen and ( max-width: 1024px )
+    .container
+        max-width: 768px
+        width: 100%
+        margin: 0 auto 
+    .advt
+        &-block
+            &__text
+                font-size: 14px      
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 600px
+        width: 100%
+        margin: 0 auto
+    .advt
+        &-block
+            &__text
+                font-size: 12px 
+@media screen and ( max-width: 600px )
+    .container
+        max-width: 480px
+        width: 100%
+        margin: 0 auto
+    .advt
+        display: none
+        &-block
+            &__close
+                top: 13px
+@media screen and ( max-width: 480px )
+    .container
+        max-width: 320px
+        width: 100%
+        margin: 0 auto
+    .advt
+        &-block
+            &__text
+                font-size: 10px
+    

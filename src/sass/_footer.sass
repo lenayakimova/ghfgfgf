@@ -1,0 +1,269 @@
+.footer
+    background-color: #000000
+    &__block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        border-bottom: 1px solid solid #ffffff
+    &-adaptive 
+        display: none
+    &-content
+        display: flex
+        flex-direction: column
+        &__title
+            color: #ffffff
+            display: block
+            padding: 50px 0 30px 0
+            font-family: 'Proxima Nova Semibold'
+        &__link
+            display: block
+            text-decoration: none
+            color: #999999
+            padding-bottom: 10px
+        &__subtitle
+            color: #999999
+            display: block
+            margin-bottom: 15px
+        &__form
+            display: flex
+            align-items: center
+        &__mail
+            width: 220px
+            height: 28.5px
+            padding-left: 14px
+            margin-right: 19px
+            outline: none
+            border: 1px solid #ffffff
+        &__btn
+            width: 200px
+            height: 34px
+            cursor: pointer
+            color: #ffffff
+            font-size: 16px
+            background-color: transparent
+            border: 1px solid #ffffff
+            font-family: 'Proxima Nova Light'
+            &:hover
+                background-color: #fff
+                color: #000000
+        &__social
+            margin-top: 60px
+            text-align: right
+        &__item img
+            max-width: 25px
+            height: 25px
+        &__item
+            margin-right: 30px
+            text-decoration: none
+            &:last-child
+                margin-right: 0
+        &__line 
+            margin-top: 37px
+            width: 100%
+            border-bottom: 2px solid #666666
+    &__description
+        display: block
+        font-size: 12px
+        color: #ffffff
+        padding: 29px 0 53px 0
+
+@media screen and ( max-width: 1420px )
+    .container
+        max-width: 1280px
+        width: 100% 
+@media screen and ( max-width: 1280px )
+    .container
+        max-width: 1024px
+        width: 100%
+    .footer
+        &-content
+            &__btn, &__mail
+                width: 150px
+            &__link
+                width: 120px
+            &__subtitle
+                width: 340px
+@media screen and ( max-width: 1024px )
+    .container
+        max-width: 768px
+        width: 100%
+        margin: 0 auto
+    .footer
+        &-last
+            margin-left: 215px
+        &-content
+            &__title2, &__social
+                text-align: center
+@media screen and ( max-width: 768px )
+    .container
+        max-width: 600px
+        width: 100%
+        margin: 0 auto
+    .footer
+        &-last
+            margin-left: 130px
+@media screen and ( max-width: 600px )
+    .footer-adaptive__btn[data-state="active"] .footer-adaptive__arrow::before, 
+    .footer-adaptive__btn2[data-state="active"] .footer-adaptive__arrow2::before,
+    .footer-adaptive__btn3[data-state="active"] .footer-adaptive__arrow3::before, 
+    .footer-adaptive__btn4[data-state="active"] .footer-adaptive__arrow4::before,
+    .footer-adaptive__btn5[data-state="active"] .footer-adaptive__arrow5::before 
+        transform: translate(-4px, -50%) rotate(-45deg)
+    .footer-adaptive__btn[data-state="active"] .footer-adaptive__arrow::after,
+    .footer-adaptive__btn2[data-state="active"] .footer-adaptive__arrow2::after,
+    .footer-adaptive__btn3[data-state="active"] .footer-adaptive__arrow3::after,
+    .footer-adaptive__btn4[data-state="active"] .footer-adaptive__arrow4::after,
+    .footer-adaptive__btn5[data-state="active"] .footer-adaptive__arrow5::after
+        transform: translate(4px, -50%) rotate(45deg)
+    .container
+        max-width: 480px
+        width: 100%
+        margin: 0 auto
+    .footer
+        &__block
+            display: none
+        &-adaptive
+            display: block
+            &__block
+                border-bottom: 1px solid #ffffff
+                padding: 12px 0
+            &__btn, &__btn2, &__btn3, &__btn4, &__btn5
+                font-family: 'Proxima Nova Semibold'
+                color: #ffffff
+                text-transform: uppercase
+                font-size: 16px
+                position: relative
+            &__arrow
+                height: 20px
+                cursor: pointer 
+                &::before, &::after 
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    right: 15px
+                    display: block
+                    width: 12px
+                    height: 1px
+                    transition: all 0.3s ease-out
+                    background-color: #ffffff
+                    transform: translate(-5px, -50%) rotate(45deg)
+	
+                &::after 
+                    transform: translate(3px, -50%) rotate(-45deg)
+            
+            &__arrow2
+                height: 20px
+                cursor: pointer 
+                &::before, &::after 
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    right: 15px
+                    display: block
+                    width: 12px
+                    height: 1px
+                    transition: all 0.3s ease-out
+                    background-color: #ffffff
+                    transform: translate(-5px, -50%) rotate(45deg)
+	
+                &::after 
+                    transform: translate(3px, -50%) rotate(-45deg)
+            
+            &__arrow3
+                height: 20px
+                cursor: pointer 
+                &::before, &::after 
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    right: 15px
+                    display: block
+                    width: 12px
+                    height: 1px
+                    transition: all 0.3s ease-out
+                    background-color: #ffffff
+                    transform: translate(-5px, -50%) rotate(45deg)
+	
+                &::after 
+                    transform: translate(3px, -50%) rotate(-45deg)
+            
+            &__arrow4
+                height: 20px
+                cursor: pointer 
+                &::before, &::after 
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    right: 15px
+                    display: block
+                    width: 12px
+                    height: 1px
+                    transition: all 0.3s ease-out
+                    background-color: #ffffff
+                    transform: translate(-5px, -50%) rotate(45deg)
+	
+                &::after 
+                    transform: translate(3px, -50%) rotate(-45deg)
+            
+            &__arrow5
+                height: 20px
+                cursor: pointer 
+                &::before, &::after 
+                    content: ""
+                    position: absolute
+                    top: 50%
+                    right: 15px
+                    display: block
+                    width: 12px
+                    height: 1px
+                    transition: all 0.3s ease-out
+                    background-color: #ffffff
+                    transform: translate(-5px, -50%) rotate(45deg)
+	
+                &::after 
+                    transform: translate(3px, -50%) rotate(-45deg)
+                
+            &__links, &__links2, &__links3, &__links4, &__links5
+                display: none
+            &__link
+                display: block
+                color: #999999
+                text-decoration: none
+                margin-bottom: 5px
+                &:last-child
+                    margin-bottom: 0
+        &-last
+            margin-left: 0
+        &__description
+            color: #999999    
+        &-content
+            &__subtitle
+                width: 370px
+            &__title2
+                font-family: 'Proxima Nova Semibold'
+                text-align: left
+                color: #ffffff
+                text-transform: uppercase
+                font-size: 16px
+                padding: 15px 0px
+            &__mail
+                width: 210px
+            &__social
+                text-align: right
+                margin-top: 40px
+                margin-right: 80px
+@media screen and ( max-width: 480px )
+    .container
+        max-width: 320px
+        width: 100%
+        margin: 0 auto
+    .footer
+        &-content
+            &__subtitle
+                width: 300px
+            &__social
+                margin-right: 0
+            &__mail
+                margin-right: 10px
+                width: 190px
+            
